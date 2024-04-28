@@ -15,4 +15,13 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Seeds\brands.json" />
+    <EmbeddedResource Include="Seeds\brands.json" />
+    <None Remove="Seeds\products.json" />
+    <EmbeddedResource Include="Seeds\products.json" />
+    <None Remove="Seeds\types.json" />
+    <EmbeddedResource Include="Seeds\types.json" />
+  </ItemGroup>
+
 </Project>
